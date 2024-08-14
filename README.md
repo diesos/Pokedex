@@ -23,12 +23,12 @@ The application also demonstrates conditional rendering and features a stylish c
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/diesos/pokedex-project.git
+   git clone https://github.com/diesos/Pokedex.git
    ```
 
 2. **Navigate into the project directory**:
 ```bash
-cd pokedex-project
+cd Pokedex
 ```
 3. **Install dependencies**:
   ```bash
