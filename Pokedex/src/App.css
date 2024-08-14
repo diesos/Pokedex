@@ -2,10 +2,10 @@
 nav {
   display: flex;
   position: relative;
-	justify-content: space-around;
+	justify-content: space-between;
   font-family: "Press Start 2P", sans-serif;
   font-weight: 400;
-  font-size: 1rem;
+  font-size: clamp(12px, 3vw, 20px);
   padding: 0px;
   margin: 0px;
   height: 100px;
@@ -64,6 +64,16 @@ nav::after {
   justify-content: center;
 }
 
+nav > ul > li{
+  color: white;
+  text-decoration: none;
+  font-size: 100%;
+  font-weight: 400;
+  padding: 10px;
+  position: relative;
+  transition: 0.5s;
+}
+
 .ui.input{
   margin:30px;
 }
@@ -112,4 +122,19 @@ nav::after {
   display: flex;
   justify-content: center;
   margin-top: 30px;
+}
+
+.poke-font{
+  font-family: "Press Start 2P", sans-serif;
+}
+
+.poke-index{
+  font-family: "Press Start 2P", sans-serif;
+  font-size: 2rem;
+  top : 10px;
+  left: 10px;
+  position: absolute;
+  rotate: -9deg;
+  color: #F66969;
+  text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000;
 }

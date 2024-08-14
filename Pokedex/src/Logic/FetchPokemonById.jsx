@@ -34,10 +34,7 @@ const FetchPokemonById = ({url}) => {
 
   return (
           <CardExampleCard
-    pokeName={pokemonData.name}
-    imgUrl={pokemonData.sprites.front_default}
-    alt={pokemonData.name}
-    type={pokemonData.types.map((typeInfo) => typeInfo.type.name).join(", ")}
+        {...pokemonData}
     />
   );
 };
