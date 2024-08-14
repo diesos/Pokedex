@@ -1,9 +1,10 @@
-;
+import Search from './Search';
 
 export default function Nav() {
 
 
 	  return (
+		<div className='nav-bar'>
 		<nav>
 	  <ul>
 		<li>
@@ -13,6 +14,8 @@ export default function Nav() {
 		  Pokedex
 		</li>
 	  </ul>
+	  <Search />
 	</nav>
+	</div>
   );
 }
