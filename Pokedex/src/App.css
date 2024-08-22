@@ -94,6 +94,12 @@ nav > ul > li{
   padding: 5px;
 }
 
+.list:hover {
+	-webkit-transform: translateY(-23px) translateX(10px);
+	transform: translateY(-23px) translateX(10px);
+  transition: ease-in 0.3;
+}
+
 .pagination {
   display: flex;
   border: 1px solid #fff;
