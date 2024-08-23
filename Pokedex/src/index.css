@@ -349,3 +349,22 @@
   [hidden] {
 	display: none;
   }
+
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  border: 1px solid #fff;
+  padding: 20px;
+  box-sizing: content-box;
+  margin-top: 30px;
+  flex-wrap: wrap;
+  flex-basis: 100%;
+  flex: 1 1 0px;
+  }
+
+
+.pagination>button {
+  padding: 20px;
+
+}
