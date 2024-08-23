@@ -46,12 +46,19 @@ export default function CardExampleCard(props){
     className="ui fluid button"
     style={{marginTop : '10px'}}
     onClick={handleClick}>More info</button>
-    {show && <CardDescription>
+
+    {show &&
+    <CardDescription>
+      <div className='card-details'>
       <p>Height: {height}</p>
       <p>Weight: {weight}</p>
       <p>Ability: {abilities}</p>
       <p>Base Experience: {base_experience}</p>
-    </CardDescription>}
+      </div>
+
+    </CardDescription>
+}
+
     </CardContent>
   </Card>
 )
