@@ -2,13 +2,12 @@
 
 ## Overview
 
-<<<<<<< HEAD
 Welcome to the Pokedex project! This is a small React application that showcases Pokémon data fetched from the [PokeAPI](https://pokeapi.co/).
 The project leverages React hooks, including `useState` and `useEffect`, for managing component state and handling side effects such as API calls.
 =======
-Welcome to the Pokedex project! This is a small React application that showcases Pokémon data fetched from the [PokeAPI](https://pokeapi.co/). 
-The project leverages React hooks, including `useState` and `useEffect`, for managing component state and handling side effects such as API calls. 
->>>>>>> e89a2d9fd6c71f2bd5f7784522dfa6dd60684a30
+Welcome to the Pokedex project! This is a small React application that showcases Pokémon data fetched from the [PokeAPI](https://pokeapi.co/).
+The project leverages React hooks, including `useState` and `useEffect`, for managing component state and handling side effects such as API calls.
+
 The application also demonstrates conditional rendering and features a stylish curved navbar designed with CSS pseudo-elements.
 
 ## Features
@@ -26,49 +25,34 @@ The application also demonstrates conditional rendering and features a stylish c
 
 ### Installation
 
-1. **Clone the repository**:
-<<<<<<< HEAD
+1. # **Clone the repository**:
 
-=======
->>>>>>> e89a2d9fd6c71f2bd5f7784522dfa6dd60684a30
    ```bash
    git clone https://github.com/diesos/Pokedex.git
    ```
 
-2. **Navigate into the project directory**:
-<<<<<<< HEAD
+2. # **Navigate into the project directory**:
 
 ```bash
 cd Pokedex
 ```
 
-3. **Install dependencies**:
+3. # **Install dependencies**:
 
 ```bash
 npm install
 ```
 
-=======
-```bash
-cd Pokedex
-```
-3. **Install dependencies**:
-  ```bash
-npm install
-```
->>>>>>> e89a2d9fd6c71f2bd5f7784522dfa6dd60684a30
-4. **Running the Application**:
+4. # **Running the Application**:
    ```bash
    npm start
    ```
-<<<<<<< HEAD
+   ===========================================================================================
    This will open the application in your default web browser at http://localhost:3000.
-=======
-This will open the application in your default web browser at http://localhost:3000.
->>>>>>> e89a2d9fd6c71f2bd5f7784522dfa6dd60684a30
+   ===========================================================================================
 
 **Usage:**
-**Home:** View a list of Pokémon with basic information.
+View a list of Pokémon with basic information.
 TODO: **Search:** Use the search bar to find specific Pokémon.
 **Details:** Click on a Pokémon to view more details.
 
@@ -77,11 +61,6 @@ TODO: **Search:** Use the search bar to find specific Pokémon.
 **PokeAPI:** For fetching Pokémon data.
 **CSS:** Vanilla, for styling the front.
 
-**Screenshot**:
+# **Screenshot**:
 
-[![960069875bd584e78a0492863a23ba1a.th.png](https://imgtr.ee/images/2024/08/14/960069875bd584e78a0492863a23ba1a.th.png)](https://imgtr.ee/image/hUCgBm)
-<<<<<<< HEAD
-=======
-
-
->>>>>>> e89a2d9fd6c71f2bd5f7784522dfa6dd60684a30
+# [![960069875bd584e78a0492863a23ba1a.th.png](https://imgtr.ee/images/2024/08/14/960069875bd584e78a0492863a23ba1a.th.png)](https://imgtr.ee/image/hUCgBm)
