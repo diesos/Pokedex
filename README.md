@@ -47,9 +47,7 @@ npm install
    ```bash
    npm start
    ```
-   ===========================================================================================
    This will open the application in your default web browser at http://localhost:3000.
-   ===========================================================================================
 
 **Usage:**
 View a list of Pokémon with basic information.
