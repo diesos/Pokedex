@@ -155,22 +155,88 @@ nav > ul > li {
 
 .poke-font {
   font-family: "Press Start 2P", sans-serif;
+  margin:0;
+}
+
+.poke-font.detail{
+  margin-top: 1em;
 }
 
 .poke-index {
   font-family: "Press Start 2P", sans-serif;
   font-size: 2rem;
-  top: 10px;
-  left: 10px;
-  position: absolute;
   rotate: -9deg;
   color: #f66969;
+  margin-left: 0.6em;
   text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000,
     -2px 2px 0 #000;
 }
 
-.card-details {
+/* .card-details {
+  font-family: "Press Start 2P", sans-serif;
   margin-top: 1rem;
   overflow: hidden;
+  margin-bottom: 10px;
+} */
+
+.carte-int{
+  max-width: 80%;
+  flex-grow: 1;
+  flex: 1 1 0px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 6px;
+  box-sizing:border-box;
+  overflow: hidden;
+  width: 232px;
+  background-color: #F2F2F2;
+  box-shadow: 1px 3px 0 #d4d4d5,0 0 0 1px #d4d4d5
+
 }
 
+.carte-pic{
+  background-color: #F2F2F2;
+  width: auto;
+  height: 232px;
+  border-bottom: 1px solid #E9E9E9;
+}
+
+.carte-info{
+  display: flex;
+  flex-direction: column;
+  padding: 1em 1em;
+  height: auto;
+  background-color: #FFFFFF;
+  line-height: 1em;
+
+
+}
+
+.carte-btn{
+  width: 100%;
+  background-color: #E0E1E2;
+  border-radius: 6px;
+  align-self: center;
+  margin: none;
+  margin-top: 0.8em;
+  color: #5A5A5A;
+  font-weight: 700;
+  border-color: transparent;
+  outline: 0;
+  min-height: 1em;
+  padding: .78571429em 1.5em .78571429em;
+  vertical-align: baseline;
+  box-shadow: 0 0 0 1px transparent inset, 0 0 0 0 rgba(34, 36, 38, .15);
+  user-select: none;
+}
+.carte-btn:hover{
+  background-color:#CACBCD;
+  transition: 0.2s ease-in;
+    box-shadow: 0 0 0 1px transparent inset, 0 0 0 0 rgba(34, 36, 38, .15);
+
+}
+
+.detail{
+  color: rgba(0,0,0,.4);
+  font-size: 0.7em;
+}

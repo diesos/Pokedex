@@ -30,36 +30,60 @@ export default function CardExampleCard(props){
   }
 
 	return (
-  <Card>
-<p className="poke-font poke-index">#{index}</p>
-    {imgUrl && <Image src={imgUrl} alt={name} />}
-    <CardContent>
+//     <>
+//   <Card>
+// <p className="poke-font poke-index">#{index}</p>
+//     {imgUrl && <Image src={imgUrl} alt={name} />}
+//     <CardContent>
 
-      <CardHeader >
+//       <CardHeader >
 
-		<p className='poke-font'>{name}</p></CardHeader>
+// 		<p className='poke-font'>{name.toUpperCase()}</p></CardHeader>
 
-      <CardMeta>
-        <span className='poke-font'>type:{types.map((typeInfo) => typeInfo.type.name).join(", ")}</span>
-		</CardMeta>
-    <button
-    className="ui fluid button"
-    style={{marginTop : '10px'}}
-    onClick={handleClick}>More info</button>
+//       <CardMeta>
+//         <span className='poke-font'>type:{types.map((typeInfo) => typeInfo.type.name).join(", ")}</span>
+// 		</CardMeta>
+//     <button
+//     className="ui fluid button"
+//     style={{marginTop : '10px'}}
+//     onClick={handleClick}>More info</button>
 
-    {show &&
-    <CardDescription>
-      <div className='card-details'>
-      <p>Height: {height}</p>
-      <p>Weight: {weight}</p>
-      <p>Ability: {abilities}</p>
-      <p>Base Experience: {base_experience}</p>
+//     {show &&
+//     <CardDescription>
+//       <div className='card-details'>
+//       <p>Height: {height}</p>
+//       <p>Weight: {weight}</p>
+//       <p>Ability: {abilities}</p>
+//       <p>Base Experience: {base_experience}</p>
+//       </div>
+
+//     </CardDescription>
+// }
+
+//     </CardContent>
+//   </Card>
+
+<>
+      <div className="carte-int">
+      <p className="poke-font poke-index">#{index}</p>
+
+      {imgUrl && <Image src={imgUrl} alt={name} />}
+      <div className="carte-info">
+      <div className='detail-text'>
+      <p className='poke-font'>{name.toUpperCase()}</p>
+      <span className='poke-font detail'>type:{types.map((typeInfo) => typeInfo.type.name).join(", ")}</span>
       </div>
+      <button className="carte-btn" onClick={handleClick}>More info</button>
+      {show &&
+            <div className='poke-font detail'>
 
-    </CardDescription>
-}
-
-    </CardContent>
-  </Card>
+            <p>Height: {height}</p>
+            <p>Weight: {weight}</p>
+            <p>Ability: {abilities}</p>
+            <p>Base Experience: {base_experience}</p>
+            </div>}
+      </div>
+    </div>
+    </>
 )
 }

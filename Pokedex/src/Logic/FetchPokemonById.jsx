@@ -33,9 +33,11 @@ const FetchPokemonById = ({url}) => {
   }
 
   return (
+    <>
           <CardExampleCard
         {...pokemonData}
     />
+    </>
   );
 };
 
