@@ -1,14 +1,16 @@
 import { useEffect, useState } from "react";
-import CardExampleCard from "../Components/Card";
+import { useParams } from "react-router-dom";
+import Detail from "../Components/Detail";
 
-const FetchPokemonById = ({url}) => {
+const FetchPokemonDetail = () => {
+const {id} = useParams();
   const [loading, setLoading] = useState(true);
-  const [pokemonData, setPokemonData] = useState();
-console.log(url);
+  const [pokemonData, setPokemonData] = useState(null);
+
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch(url);
+        const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${id}`);
         if (!response.ok) {
           throw new Error("Network response was not ok");
         }
@@ -21,7 +23,7 @@ console.log(url);
       setLoading(false);
     }
     fetchData();
-  }, [url]); // Depend on pokemonId to refetch if it changes
+  }, [id]); // Depend on pokemonId to refetch if it changes
 
   if (loading) {
     return <h1>Loading...</h1>;
@@ -34,11 +36,11 @@ console.log(url);
 
   return (
     <>
-          <CardExampleCard
+          <Detail
         {...pokemonData}
     />
     </>
   );
 };
 
-export default FetchPokemonById;
+export default FetchPokemonDetail;

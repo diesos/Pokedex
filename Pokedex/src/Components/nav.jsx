@@ -1,4 +1,6 @@
+import { Link } from 'react-router-dom';
 import Search from './Search';
+import FetchPokemon from '../Logic/FetchPokemon';
 
 export default function Nav() {
 
@@ -8,10 +10,9 @@ export default function Nav() {
 		<nav>
 	  <ul>
 		<li>
-		  Home
-		</li>
-		<li>
+			<Link to="/">
 		  Pokedex
+		  </Link>
 		</li>
 	  </ul>
 	  <Search />

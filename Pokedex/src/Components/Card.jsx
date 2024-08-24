@@ -1,4 +1,5 @@
 import {useState} from 'react';
+import { Link } from 'react-router-dom';
 import {
   CardMeta,
   CardHeader,
@@ -73,7 +74,11 @@ export default function CardExampleCard(props){
       <p className='poke-font'>{name.toUpperCase()}</p>
       <span className='poke-font detail'>type:{types.map((typeInfo) => typeInfo.type.name).join(", ")}</span>
       </div>
-      <button className="carte-btn" onClick={handleClick}>More info</button>
+      <Link to={`detail/${id}`}>
+        <button className="carte-btn" >
+          More info
+          </button>
+      </Link>
       {show &&
             <div className='poke-font detail'>
 
