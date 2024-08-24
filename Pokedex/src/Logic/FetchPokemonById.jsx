@@ -13,7 +13,7 @@ const FetchPokemonById = ({url}) => {
           throw new Error("Network response was not ok");
         }
         const data = await response.json();
-        console.log(data);
+        // console.log(data);
         setPokemonData(data);
       } catch (error) {
         console.error(error);

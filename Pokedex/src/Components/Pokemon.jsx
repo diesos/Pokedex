@@ -14,13 +14,13 @@ const PokemonList = ({ posts, loading, currentPage }) => {
   const currentPosts = posts.slice(startIndex, endIndex);
 
 
-  console.log("Current posts are:", currentPosts);
+  // console.log("Current posts are:", currentPosts);
 
   return (
     <>
       {currentPosts.map((data, index) => (
         <div className="list" key={index}>
-          {console.log(data.url)}
+          {/* {console.log(data.url)} */}
           <FetchPokemonById url={data.url} />
           <br />
         </div>

@@ -1,21 +1,21 @@
-import { useState } from "react";
+// import { useState } from "react";
 
 
 
-const Detail = () => {
+// const Detail = () => {
 
-	const [pokemonDetail, setPokemonDetail] = useState([]);
+// 	const [pokemonDetail, setPokemonDetail] = useState([]);
 
-	return (
+// 	return (
 
-		<>
-		<p>Id: {id}</p>
-		<p>Name: {name}</p>
-		</>
+// 		<>
+// 		<p>Id: {id}</p>
+// 		<p>Name: {name}</p>
+// 		</>
 
-	)
+// 	)
 
 
-}
+// }
 
-export default Detail;
+// export default Detail;

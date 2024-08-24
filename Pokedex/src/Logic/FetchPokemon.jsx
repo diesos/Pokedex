@@ -18,7 +18,7 @@ export default function FetchPokemon() {
             "https://pokeapi.co/api/v2/pokemon?limit=151"
           );
           const data = await response.json();
-          console.log("Api data reached SUCCESSFULLY");
+        //   console.log("Api data reached SUCCESSFULLY");
           setPokemonData(data); // Update state with the fetched data
           localStorage.setItem("pokemon", JSON.stringify(data));
           setLoading(false); // Save to localStorage
@@ -30,9 +30,9 @@ export default function FetchPokemon() {
       fetchPokemons();
     }
   }, [pokemonData]);
-  console.log(pokemonData);
-  console.log(pokemonData.results.length);
-  console.log(loading);
+//   console.log(pokemonData);
+//   console.log(pokemonData.results.length);
+//   console.log(loading);
 
   const paginationNumbers = [];
   const [currentPage, setCurrentPage] = useState(1);
@@ -48,7 +48,7 @@ export default function FetchPokemon() {
   const handleClick = (event) => {
     setCurrentPage(Number(event.target.textContent));
   };
-  console.log(currentPage);
+//   console.log(currentPage);
   // Render logic or return data as needed
   return (
     <>

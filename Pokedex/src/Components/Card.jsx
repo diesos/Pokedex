@@ -18,7 +18,7 @@ export default function CardExampleCard(props){
     height, weight, base_experience} = props;
   const [show, setShow] = useState(false);
 
-  console.log(props)
+  // console.log(props)
 
   const abilities = props.abilities.map((ability) => ability.ability.name).join(", ")
   const index = id
@@ -26,7 +26,7 @@ export default function CardExampleCard(props){
 
   const handleClick = () => {
     setShow(!show);
-    console.log(show);
+    // console.log(show);
   }
 
 	return (
