@@ -19,21 +19,7 @@ nav {
   -webkit-box-shadow: 0px 2px 49px -7px rgba(0, 0, 0, 0.36);
   -moz-box-shadow: 0px 2px 49px -7px rgba(0, 0, 0, 0.36);
   box-shadow: 0px 2px 49px -7px rgba(0, 0, 0, 0.36);
-  ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    li {
-      margin: 0 10px;
-      a {
-        text-decoration: none;
-        color: white;
-      }
-    }
-  }
+
 }
 
 nav::before {
@@ -80,6 +66,8 @@ nav > ul > li {
   position: relative;
   transition: 0.5s;
 }
+
+
 
 .ui.input {
   margin: 30px;
@@ -240,3 +228,33 @@ nav > ul > li {
   color: rgba(0,0,0,.4);
   font-size: 0.7em;
 }
+
+
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+li {
+margin: 0 10px;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover{
+  color: rgb(205, 76, 76)
+}
+
+@media (max-width: 480px){
+  .faAngleRight{
+    color: rebeccapurple;
+    }
+  }
+
+

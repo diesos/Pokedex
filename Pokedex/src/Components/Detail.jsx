@@ -9,6 +9,7 @@ const Container = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 3vw;
 `;
 
 const Detail = (props) => {
@@ -40,18 +41,24 @@ const Detail = (props) => {
   const previousPokemonLink = previousPokemon() ? `/detail/${previousPokemon()}` : "#";
   return (
 	<>
-	<Link to={previousPokemonLink}><FontAwesomeIcon icon={faAngleLeft} size="2xl" style={{color: "#F12B2B",position:'absolute', left:'Opx', top:'50%', width:'120px', height:'200px'}} /></Link>
-	<Link to={nextPokemonLink}><FontAwesomeIcon icon={faAngleRight} size="2xl" style={{color: "#F12B2B",position:'absolute',top:'50%', right:'0px', width:'120px', height:'200px'}} /></Link>
+	<Link to={previousPokemonLink}><FontAwesomeIcon icon={faAngleLeft} size="2xl" className="icon-left"/></Link>
+	<Link to={nextPokemonLink}><FontAwesomeIcon  icon={faAngleRight} size="2xl" className="icon-right" /></Link>
     <Container>
+
       <p className="poke-font poke-index">#{id}</p>
-      <img src={imgUrl} alt={name} />
+      <img style={{width:'232px'}} src={imgUrl} alt={name} />
+      <div className="carte-info">
+      <div className='detail-text'>
       <p className='poke-font'>{name.toUpperCase()}</p>
       <span className='poke-font detail'>Type: {types.map(typeInfo => typeInfo.type.name).join(", ")}</span>
       <p className="poke-font">Height: {height}</p>
       <p className="poke-font">Weight: {weight}</p>
       <p className="poke-font">Ability: {abilities}</p>
       <p className="poke-font">Base Experience: {base_experience}</p>
-      <button onClick={playAudio}>Cries</button>
+      <button className="carte-btn" onClick={playAudio}>Cries</button>
+      </div>
+      </div>
+
     </Container>
 	</>
   );
