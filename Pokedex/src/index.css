@@ -393,3 +393,10 @@ template {
     top: 85%
    }
 }
+
+.poke-img{
+  width:25vw;
+  @media (max-width: 760px){
+    width: 70vw;
+  }
+}
