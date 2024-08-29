@@ -11,12 +11,14 @@ const {id} = useParams();
     const fetchData = async () => {
       try {
         const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${id}`);
+        //TODO: FETCH MORE DATA FOR VIEW
         if (!response.ok) {
           throw new Error("Network response was not ok");
         }
         const data = await response.json();
         // console.log(data);
         setPokemonData(data);
+        console.log(data);
       } catch (error) {
         console.error(error);
       }
