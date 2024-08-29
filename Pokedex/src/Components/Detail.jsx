@@ -46,7 +46,7 @@ const Detail = (props) => {
     <Container>
 
       <p className="poke-font poke-index">#{id}</p>
-      <img style={{width:'232px'}} src={imgUrl} alt={name} />
+      <img className="poke-img" src={imgUrl} alt={name} />
       <div className="carte-info">
       <div className='detail-text'>
       <p className='poke-font'>{name.toUpperCase()}</p>
